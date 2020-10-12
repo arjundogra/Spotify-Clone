@@ -1,0 +1,52 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  cursor: pointer;
+  width: 150px;
+  object-fit: contain;
+  margin-top: 25px;
+  margin-left: 40px;
+  background: transparent;
+}
+
+.logo:hover {
+  filter: contrast(0%) brightness(300%);
+  transition: all 0.2s;
+}
+
+.nav_links {
+  margin-right: 90px;
+  display: flex;
+  list-style: none;
+}
+.nav_links > li {
+  color: #1ed760;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 30px;
+}
+
+.nav_links > li:hover {
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s;
+}
+
+/* Scroll Nav Show */
+.nav_dark {
+  background-color: #111;
+  transition: all 0.4s;
+  z-index: 1;
+}
+.white {
+  filter: contrast(0%) brightness(300%);
+  transition: all 0.4s;
+}
+
+/* Scroll Nav End */
