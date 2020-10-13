@@ -9,9 +9,6 @@ function Nav() {
         setshow(true);
       } else setshow(false);
     });
-    return () => {
-      window.removeEventListener("scroll");
-    };
   }, []);
   return (
     <div className={`nav ${show && "nav_dark"}`}>
@@ -24,9 +21,9 @@ function Nav() {
       </div>
       <div>
         <ul className="nav_links">
-          <li className={`${show && "white"}`}>Premium</li>
-          <li className={`${show && "white"}`}>Help</li>
-          <li className={`${show && "white"}`}>Download</li>
+          <li>Premium</li>
+          <li>Help</li>
+          <li>Download</li>
         </ul>
       </div>
     </div>
